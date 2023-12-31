@@ -20,8 +20,10 @@ while True:
     
     if len(letra) > 1: #Se o usuario digitar mais de uma letra.
         print('Digite apenas 1 letra por vez!')
+        continue
     if len(letra) == 0: #Se o usuario não digitar nada.
         print("Digite alguma letra!")
+        continue
     for posicao, c in enumerate(secret_word): #Vai percorrer a string secret_word
         trys_list.append(c) #Vai adicionar cada letra da palavra secret a lista de tentativa
         if c == letra: #Se a letra da palavra secreta for igual a letra que o usuario digitou
