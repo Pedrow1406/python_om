@@ -7,14 +7,17 @@ Faça um jogo para o usuário adivinha qual a palavra secreta.
 Faça a contagem de tentativas do seu usuário.
 """
 
-secret_word = 'Pedrow'.upper() #String da Palavra Secreta
-cripto_word_list = ['*','*','*','*','*','*'] #Lista para criptografar a secret_word
+secret_word = input('Digite a Palavra Secreta: ').upper() #Input para o Usuario da Definir a Palavra Secreta
+cripto_word_list = [] #Lista para criptografar a secret_word
+for percorrer in secret_word:# Para cada letra da palavra secreta
+    cripto_word_list.append('*') #Adicone um '*' para os * se adaptarem ao tamanho da palavra secreta
 trys_list = [] #Lista de Tentativas
 trys = 0 # Quantidade de Tentativas
 correct_word = 0 # Quantidade de Acertos
 while True:
     trys_list = [] #Lista de Tentativas Resetada apos cada intereção do loop
-    letra = input('Digite uma letra e tente acertar a palavra secreta: ').upper().strip()
+    letra = input('Digite uma letra e tente acertar a palavra secreta: ').upper()
+    
     if len(letra) > 1: #Se o usuario digitar mais de uma letra.
         print('Digite apenas 1 letra por vez!')
     if len(letra) == 0: #Se o usuario não digitar nada.
