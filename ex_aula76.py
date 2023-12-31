@@ -12,7 +12,7 @@ cripto_word_list = [] #Lista para criptografar a secret_word
 for percorrer in secret_word:# Para cada letra da palavra secreta
     cripto_word_list.append('*') #Adicone um '*' para os * se adaptarem ao tamanho da palavra secreta
 trys_list = [] #Lista de Tentativas
-trys = 0 # Quantidade de Tentativas
+trys_erro = 0 # Quantidade de Tentativas Erradas
 correct_word = 0 # Quantidade de Acertos
 while True:
     trys_list = [] #Lista de Tentativas Resetada apos cada intereção do loop
@@ -33,9 +33,9 @@ while True:
             print() #print vazio para quebrar de linha para nao interferir nos outros prints
         elif c != letra: #Se a cada letra da lista da secret_word for diferente da letra que o usario digitou
             if len(trys_list) == len(secret_word): # E se a quantidade de itens da trys_list for igual a quantidade de itens da secret_word
-                trys += 1 #Try vai receber mais 1 ou seja soma 1 tentativa a cada erro
-                print(f'Letra Incorreta. Tentativa ({trys}x)') #printa que a letra esta incorreta e mostra a quant de trys
+                trys_erro += 1 #Try vai receber mais 1 ou seja soma 1 tentativa a cada erro
+                print(f'Letra Incorreta. Tentativa ({trys_erro}x)') #printa que a letra esta incorreta e mostra a quant de trys
 
     if correct_word == len(secret_word): #Se a quantidade de letras acertadas for igual a quantidade de letras da palavra secreta
-        print(f'Parabéns!!! Você Descobriu a Palavra Secreta com {trys} tentativas.') #Vai printar um Parabens com a quantidade de Trys
+        print(f'Parabéns!!! Você Descobriu a Palavra Secreta com {trys_erro} tentativas.') #Vai printar um Parabens com a quantidade de Trys
         break # E depois vai se encerrar o loop while e vai terminar o programa.
