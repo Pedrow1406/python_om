@@ -39,6 +39,6 @@ while True:
         fail_count += 1 #Try vai receber mais 1 ou seja soma 1 tentativa a cada erro
         print(f'Letra Incorreta. Contagem de erros em ({fail_count}x)') #printa que a letra esta incorreta e mostra a quant de trys
   
-    if  '*' not in secret_letters: #Se a quantidade de letras acertadas for igual a quantidade de letras da palavra secreta
+    if  '*' not in secret_letters: #Se * não estiver na lista criptografada
         print(f'Parabéns!!! Você Descobriu a Palavra Secreta com {fail_count} tentativas falhas.') #Vai printar um Parabens com a quantidade de Trys
         break # E depois vai se encerrar o loop while e vai terminar o programa.
