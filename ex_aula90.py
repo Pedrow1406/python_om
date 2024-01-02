@@ -15,7 +15,7 @@ while True:
     compras.append(produto)
     continua = input('Voce quer continuar comprando [S/N]: ').strip().upper()
     resp = ''
-    loops = 0
+    loops = False
     if continua not in 'SN':
         print('Digite apenas [S] ou [N]')
         continue
@@ -26,6 +26,7 @@ while True:
             while True:
                 os.system('cls')
                 if len(compras) == 0:
+                    loops = False
                     print('Sua lista de compras esta vazia no momento.')
                     resp = input('Voce deseja comprar algum produto [S/N]: ').strip().upper()
                     if resp not in 'SN':
@@ -36,7 +37,7 @@ while True:
                 else:
                     print('Sua lista de compras atual é: ')
                     mostra_lista()
-                if loops > 0: #So vai entrar no loop se o loop for maior que 0. Pq no loop 0 essas variaveis ainda não existem
+                if loops: #So vai entrar no loop se o loop for True. Condicional criada pq no momento não existe essas variáveis.
                     if 'S' in deletar:
                         produto_deletar = input('Qual produto voce deseja deletar?(Digite o Numero do Produto): ').strip()
                         if produto_deletar.isdigit():
@@ -57,9 +58,10 @@ while True:
                     print('Digite apenas [S] ou [N]')
                 else:
                     if 'S' in deletar:
-                        loops += 1
+                        loops = True
                         continue
                     if 'N' in deletar:
+                        loops = False
                         break
                 if 'S' in resp or 'N' in resp:
                     break
