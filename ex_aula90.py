@@ -49,7 +49,10 @@ while True:
                                 mostra_lista()
                         else:
                             print('Porfavor digite o Numero do Produto.')
-                deletar = input('Deseja deletar algum item da sua lista [S/N]: ').strip().upper()
+                if len(compras) > 0:
+                    deletar = input('Deseja deletar algum item da sua lista [S/N]: ').strip().upper()
+                else:
+                    continue
                 if deletar not in 'SN':
                     print('Digite apenas [S] ou [N]')
                 else:
