@@ -6,26 +6,26 @@ o número recebido como parâmetro
 
 # Feito por Pedrow1406
 
-# def duplica(number):
-#     return number * 2
+def duplica(number):
+    return number * 2
 
-# def triplica(number):
-#     return number * 3
+def triplica(number):
+    return number * 3
 
-# def quadruplica(number):
-#     return number * 4
+def quadruplica(number):
+    return number * 4
 
-# num = input('Digite um Numero Inteiro: ')
-# if num.isdigit():
-#     num = int(num)
-#     duplicado = duplica(num)
-#     triplicado = triplica(num)
-#     quadruplicado = quadruplica(num)
-#     print(f'Número Duplicado: {duplicado}')
-#     print(f'Número Triplicado: {triplicado}')
-#     print(f'Número Quadruplicado: {quadruplicado}')
-# else:
-#     print('Digite um número Inteiro')
+num = input('Digite um Numero Inteiro: ')
+if num.isdigit():
+    num = int(num)
+    duplicado = duplica(num)
+    triplicado = triplica(num)
+    quadruplicado = quadruplica(num)
+    print(f'Número Duplicado: {duplicado}')
+    print(f'Número Triplicado: {triplicado}')
+    print(f'Número Quadruplicado: {quadruplicado}')
+else:
+    print('Digite um número Inteiro')
 
 # Feito por Otávio Miranda
 # Usando Função para criar outras funções
