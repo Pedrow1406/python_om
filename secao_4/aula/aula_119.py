@@ -10,3 +10,6 @@ pessoa = {
 }
 
 print(f'{pessoa['nome']} tem {pessoa['idade']} anos.')
+
+for each_atributte in pessoa:
+    print(f'{each_atributte} = {pessoa[each_atributte]}')
