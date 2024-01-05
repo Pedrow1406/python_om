@@ -1,5 +1,0 @@
-l é essa linguagem de programação? \nA)Java B)Python C)Ruby D)C#\nEscolha a alternativa correta: ').strip().upper()
-# alternative('B')
-# pergunta = input('Quanto é 1 + 1? \nA)3 B)11 C)4 D)2\nEscolha a alternativa correta: ').strip().upper()
-# alternative('D')
-print()
