@@ -1,0 +1,41 @@
+[
+  {
+    "nome": "Pedrow",
+    "idade": 18,
+    "sexo": "Masculino",
+    "gol_por_partida": [
+      3,
+      5,
+      9,
+      4
+    ]
+  },
+  {
+    "nome": "Maria",
+    "idade": 15,
+    "sexo": "Feminino",
+    "gol_por_partida": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  {
+    "nome": "Felipe",
+    "idade": 13,
+    "sexo": "Masculino",
+    "gol_por_partida": [
+      0,
+      2,
+      1,
+      0
+    ]
+  },
+  {
+    "nome": "João",
+    "idade": 25,
+    "sexo": "Masculino"
+  }
+]
