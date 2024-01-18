@@ -1,0 +1,4 @@
+Error: Samsung foi desligado (Smartphone)
+Sucess: Iphone foi Ligado (Smartphone)
+Sucess: Samsung foi Ligado (Smartphone)
+Error: Iphone foi desligado (Smartphone)
