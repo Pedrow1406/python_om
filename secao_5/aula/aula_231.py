@@ -24,13 +24,13 @@ class Notification(ABC):
     
 class NotificationEmail(Notification):
     def send(self) -> bool:
-        if self._msg: 
+        if self._msg.strip(): 
             print(f'E-mail: {self._msg}')
             return True
         return False
 class NotificationSMS(Notification):
     def send(self) -> bool:
-        if self._msg:
+        if self._msg.strip():
             print(f'SMS: {self._msg}')
             return True
         return False
@@ -47,7 +47,9 @@ email = NotificationEmail('Pedrow é lindo')
 notificar(email)
 sms = NotificationSMS('Pedrow é Sigma')
 notificar(sms)
-nada = NotificationSMS('')
-notificar(nada)
+nada_sms = NotificationSMS(' ')
+nada_email = NotificationEmail('  ')
+notificar(nada_sms)
 sms.send()
 email.send()
+notificar(nada_email)
