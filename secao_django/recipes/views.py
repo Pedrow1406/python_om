@@ -8,4 +8,7 @@ def home(request): # Recebe uma request
     })
 
 def recipes(request, id): # Recebe uma request 
-    return render(request, 'recipes/pages/recipe-view.html', context={'recipe':make_recipe})
+    return render(request, 'recipes/pages/recipe-view.html', context={
+        'recipe':make_recipe,
+        'is_detail_page': True
+    })
